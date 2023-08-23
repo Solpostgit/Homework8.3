@@ -4,8 +4,8 @@ public class Main {
         task1();
         task2();
         task3();
-        task4();/*
-        task5();*/
+        task4();
+        task5();
     }
 
     public static void task1() {
@@ -60,5 +60,25 @@ public class Main {
             sum = sum + rack[index];
         }
         System.out.println("Sum = " + sum);
+    }
+
+    public static void task5() {
+        System.out.println("Task 5 Arr");
+        int[] arr = {1, 2, 3};
+        int[] arr2 = {1, 2, 3};
+        boolean arraysAreEqual = true;
+        arraysAreEqual = arr.length == arr2.length;
+        if (arraysAreEqual) {
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] != arr2[i]) {
+                    arraysAreEqual = false;
+                }
+            }
+        }
+        if (arraysAreEqual) {
+            System.out.println("Массивы одинаковые");
+        } else {
+            System.out.println("Массивы разные");
+        }
     }
 }
