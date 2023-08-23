@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
 
         task1();
-        task2();/*
-        task3();
+        task2();
+        task3();/*
         task4();
         task5();*/
     }
@@ -20,7 +20,35 @@ public class Main {
         int[] arr = new int[5];
         arr[0] = 15;
         int xArr = arr[0];
-        xArr+=2;
+        xArr += 2;
         System.out.println(arr[0] + ", " + xArr);
+    }
+
+    public static void task3() {
+        System.out.println("Task 3 - Arr Ls2.");
+        int[] rack = new int[4];
+        rack[0] = 12;
+        rack[1] = 9;
+        rack[2] = 11;
+        rack[3] = 10;
+        int[] rack2 = new int[4];
+        rack2[0] = 12;
+        rack2[1] = 9;
+        rack2[2] = 11;
+        rack2[3] = 10;
+        boolean rackAreEqual = true;
+        rackAreEqual = rack.length == rack2.length;
+        if (rackAreEqual) {
+            for (int i = 0; i < rack.length; i++) {
+                if (rack[i] != rack2[i]) {
+                    rackAreEqual = false;
+                }
+            }
+        }
+        if (rackAreEqual) {
+            System.out.println("Стеллажи одинаковые");
+        } else {
+            System.out.println("Стеллажи разные");
+        }
     }
 }
