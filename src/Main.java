@@ -3,8 +3,8 @@ public class Main {
 
         task1();
         task2();
-        task3();/*
-        task4();
+        task3();
+        task4();/*
         task5();*/
     }
 
@@ -50,5 +50,15 @@ public class Main {
         } else {
             System.out.println("Стеллажи разные");
         }
+    }
+
+    public static void task4() {
+        System.out.println("Task 4 Summ elements");
+        int[] rack = {12, 9, 11, 10};
+        int sum = 0;
+        for (int index = 0; index < rack.length; index++) {
+            sum = sum + rack[index];
+        }
+        System.out.println("Sum = " + sum);
     }
 }
